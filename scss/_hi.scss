@@ -1,0 +1,28 @@
+.hi {
+    background-color: #445162;
+    &__container {
+        width: 1180px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: Arial;
+        font-size: 60px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+    }
+    &__point {
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        &::before {
+            content: url("/img/hi/hi__icon.png");
+            margin: 20px 20px 0 0;
+        }
+    }
+}

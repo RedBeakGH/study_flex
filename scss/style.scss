@@ -1,0 +1,141 @@
+@import "nullstyle.scss";
+@import "footer.scss";
+@import "hi.scss";
+@import "what.scss";
+@import "title.scss";
+@import "info.scss";
+.content {
+    .hi {
+        padding: 50px 0 50px 0;
+        &__container {
+            margin: 0 auto;
+        }
+    }
+    .what {
+        &__container {
+            margin: 50px auto 0 auto;
+        }
+        &__title {
+            padding: 0 0 20px 0;
+        }
+        &__text {
+            p {
+                padding: 0 0 35px 0;
+            }
+        }
+    }
+    .info {
+        padding: 50px 0 50px 0;
+        &__container {
+            margin: 0 auto;
+        }
+        &__title {
+            margin: 0 auto 15px auto;
+        }
+    }
+
+    .vertical {
+        padding: 50px 0 115px 0;
+        &__container {
+            margin: 0 auto;
+        }
+        &__title {
+            margin: 0 auto 30px auto;
+        }
+        &__row {
+            padding: 0 50px 0 50px;
+        }
+        &__button {
+            margin: 0 auto;
+        }
+    }
+}
+
+.footer {
+    padding: 31px 0 23px 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content {
+    flex: 1 1 auto;
+}
+
+.vertical {
+    &__container {
+        width: 1180px;
+    }
+    &__title {
+        width: 450px;
+    }
+    &__row {
+        display: flex;
+        column-gap: 30px;
+    }
+    &__column {
+        border: 1px solid #445162;
+        background-color: #445162;
+        border-radius: 5px;
+    }
+    &__item {
+        height: 100%;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__header {
+        padding: 15px 0 15px 0;
+        font-family: Arial;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__theme {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 70px;
+        font-family: Arial;
+        font-size: 40px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #445162;
+    }
+    &__text {
+        flex: 1 1 auto;
+        font-family: Arial;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        p {
+            padding: 20px 0 20px 0;
+        }
+    }
+    &__button {
+        flex: 0 1 60px;
+        height: 40px;
+        .container {
+            border: 1px solid white;
+            padding-top: 10px;
+            text-align: center;
+            border-radius: 5px;
+            width: 260px;
+            height: 39px;
+            background-color: white;
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 700;
+            color: #445161;
+        }
+    }
+}
